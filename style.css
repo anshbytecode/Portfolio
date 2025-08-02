@@ -365,3 +365,39 @@ header .navbar ul li a:hover{
 #scroll-top.active{
   top: calc(100% - 12rem);
 }
+
+
+
+
+
+.image-hover-container {
+  position: relative;
+  width: 70%;
+}
+
+.image-hover-container img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+
+.static-img {
+  opacity: 1;
+  z-index: 2;
+}
+
+.animated-img {
+  opacity: 0;
+  z-index: 1;
+}
+
+.image-hover-container:hover .static-img {
+  opacity: 0;
+}
+
+.image-hover-container:hover .animated-img {
+  opacity: 1;
+}
+
+
